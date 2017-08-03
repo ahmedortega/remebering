@@ -1,48 +1,63 @@
 .body {
-  padding-top: 70px;
+    padding-top: 70px;
 }
-.navbar > .container-fluid .navbar-brand{
-  font-size: 25px;
+
+.navbar>.container-fluid .navbar-brand {
+    font-size: 25px;
 }
+
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:hover,
 .navbar-inverse .navbar-nav>.active>a:focus,
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
 .dropdown-menu .divider {
-  background-color: #e00b0b;
-  color: white;
+    background-color: #e00b0b;
+    color: white;
 }
-.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand{
-  font-size: 16px;
-  font-style: italic;
+
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-brand {
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Cinzel', serif;
 }
-.dropdown-menu > li > a{
-  font-size: 14px;
-  padding: 5px;
+
+.dropdown-menu>li>a {
+    font-size: 14px;
+    padding: 5px;
 }
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
-  padding-left: 25px;
-  font-size: 15px;
-  font-weight: bold;
-  transition: all .5s ease-out;
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    padding-left: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all .5s ease-out;
 }
-.navbar-inverse .navbar-nav > li > a,
+
+.navbar-inverse .navbar-nav>li>a,
 .navbar-inverse .navbar-brand,
-.dropdown-menu > li > a{
-  color: #BBB;
-  font-style: italic;
+.dropdown-menu>li>a {
+    color: #BBB;
+    font-style: italic;
+    font-family: 'Cinzel', serif;
 }
-.navbar-nav > li > .dropdown-menu{
-  background-color: black;
-  border-top: 2px solid #e00b0b;
+
+.navbar-nav>li>.dropdown-menu {
+    background-color: black;
+    border-top: 2px solid #e00b0b;
 }
-.navbar-right .dropdown-menu{
-  left: 0;
-  right: auto;
+
+.navbar-right .dropdown-menu {
+    left: 0;
+    right: auto;
 }
-.dropdown-menu > li > a > span{
-  visibility: hidden;
+
+.dropdown-menu>li>a>span {
+    visibility: hidden;
 }
-.dropdown-menu > li > a:hover > span{
-  visibility: visible;
+
+.dropdown-menu>li>a:hover>span {
+    visibility: visible;
 }
