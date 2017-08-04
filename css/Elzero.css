@@ -3,6 +3,7 @@ body {
     font-family: 'Cinzel', serif;
 }
 
+
 /*     Animations    */
 
 @-webkit-keyframes typing {
@@ -20,22 +21,59 @@ body {
     }
 }
 
-/*
-h1 {
-    font: bold 300% Consolas, Monaco, monospace;
-    border-right: .1em solid black;
-    width: 16.5em;
-    width: 21ch;
-    margin: 2em 1em;
-    white-space: nowrap;
-    overflow: hidden;
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    60%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    30%,
+    80% {
+        -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        transform: translateX(10px);
+    }
 }
-*/
+@keyframes flash {
+  0%,100%{
+    opacity: 1;
+  }
+
+  50%{
+    opacity: 0;
+  }
+}
+
+.lead {
+    animation: flash 1s ease-in-out 1;
+}
 /*     navbar    */
+
 .navbar>.container-fluid .navbar-brand {
     font-size: 25px;
     color: #C62727;
+    padding-left: 50px;
     font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.navbar>.container-fluid .navbar-brand:hover {
+    animation: shake 1s ease;
+}
+
+.navbar>.container-fluid .navbar-brand span {
+    color: #F98903;
+    font-size: 21px;
+    border-radius: 5px;
+    border-bottom: 2px solid white;
 }
 
 .navbar-inverse .navbar-nav>.active>a,
@@ -94,6 +132,7 @@ h1 {
     visibility: visible;
 }
 
+
 /*           Carousel         */
 
 .img-responsive,
@@ -111,10 +150,10 @@ h1 {
     background: rgba(3, 3, 3, .4);
     border-radius: 20px;
     padding: 20px;
+    animation: flash .8s ease-in-out 1;
 }
 
-.carousel-caption h1
-{
+.carousel-caption h1 {
     font-weight: bold;
     color: #F98903;
     border-right: 5px solid transparent;
@@ -129,29 +168,17 @@ h1 {
     font-weight: bold;
     font-size: 25px;
     color: #F98903;
-
 }
-.carousel-indicators li{
+
+.carousel-indicators li {
     width: 15px;
     height: 15px;
     border: 2px solid #F4E1E1;
 }
-.carousel-indicators .active
-{
+
+.carousel-indicators .active {
     background: #C62727;
     border: 2px solid #F4E1E1;
     width: 15px;
     height: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
