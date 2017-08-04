@@ -1,7 +1,37 @@
-.body {
-    padding-top: 70px;
+body {
+    padding-top: 60px;
+    font-family: 'Cinzel', serif;
 }
 
+/*     Animations    */
+
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes border-caret {
+    50% {
+        border-color: white;
+    }
+}
+
+/*
+h1 {
+    font: bold 300% Consolas, Monaco, monospace;
+    border-right: .1em solid black;
+    width: 16.5em;
+    width: 21ch;
+    margin: 2em 1em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+*/
+/*     navbar    */
 .navbar>.container-fluid .navbar-brand {
     font-size: 25px;
 }
@@ -12,14 +42,13 @@
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus,
 .dropdown-menu .divider {
-    background-color: #e00b0b;
+    background-color: #ff5719;
     color: white;
 }
 
 .navbar-inverse .navbar-nav>li>a,
 .navbar-inverse .navbar-brand {
     font-size: 16px;
-    font-style: italic;
     font-family: 'Cinzel', serif;
 }
 
@@ -40,13 +69,12 @@
 .navbar-inverse .navbar-brand,
 .dropdown-menu>li>a {
     color: #BBB;
-    font-style: italic;
     font-family: 'Cinzel', serif;
 }
 
 .navbar-nav>li>.dropdown-menu {
     background-color: black;
-    border-top: 2px solid #e00b0b;
+    border-top: 2px solid #ff5719;
 }
 
 .navbar-right .dropdown-menu {
@@ -61,3 +89,53 @@
 .dropdown-menu>li>a:hover>span {
     visibility: visible;
 }
+
+/*           Carousel         */
+
+.img-responsive,
+.thumbnail>img,
+.thumbnail a>img,
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    background-size: cover;
+    max-height: 600px;
+    background-repeat: no-repeat;
+}
+
+.carousel-caption {
+    bottom: 150px;
+    background: rgba(3, 3, 3, .4);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.carousel-caption h1
+{
+    font-weight: bold;
+    color: orangered;
+    border-right: 5px solid transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 12s, border-caret .5s 6;
+    -webkit-animation: typing 12s, border-caret .5s 6;
+    -o-animation: typing 11s, border-caret .5s 6;
+}
+
+.carousel-caption span {
+    font-weight: bold;
+    font-size: 25px;
+    color: orangered;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
