@@ -34,6 +34,8 @@ h1 {
 /*     navbar    */
 .navbar>.container-fluid .navbar-brand {
     font-size: 25px;
+    color: #C62727;
+    font-weight: bolder;
 }
 
 .navbar-inverse .navbar-nav>.active>a,
@@ -42,14 +44,15 @@ h1 {
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus,
 .dropdown-menu .divider {
-    background-color: #ff5719;
-    color: white;
+    background-color: #F4E1E1;
+    color: #C62727;
 }
 
 .navbar-inverse .navbar-nav>li>a,
 .navbar-inverse .navbar-brand {
     font-size: 16px;
     font-family: 'Cinzel', serif;
+    font-weight: bold;
 }
 
 .dropdown-menu>li>a {
@@ -68,8 +71,9 @@ h1 {
 .navbar-inverse .navbar-nav>li>a,
 .navbar-inverse .navbar-brand,
 .dropdown-menu>li>a {
-    color: #BBB;
+    color: #F98903;
     font-family: 'Cinzel', serif;
+    transition: .7s;
 }
 
 .navbar-nav>li>.dropdown-menu {
@@ -112,21 +116,33 @@ h1 {
 .carousel-caption h1
 {
     font-weight: bold;
-    color: orangered;
+    color: #F98903;
     border-right: 5px solid transparent;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 12s, border-caret .5s 6;
     -webkit-animation: typing 12s, border-caret .5s 6;
-    -o-animation: typing 11s, border-caret .5s 6;
+    -o-animation: typing 10s, border-caret .5s 6;
 }
 
 .carousel-caption span {
     font-weight: bold;
     font-size: 25px;
-    color: orangered;
-}
+    color: #F98903;
 
+}
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #F4E1E1;
+}
+.carousel-indicators .active
+{
+    background: #C62727;
+    border: 2px solid #F4E1E1;
+    width: 15px;
+    height: 15px;
+}
 
 
 
