@@ -321,3 +321,82 @@ body {
 .testimonials .carousel-indicators li img{
     max-width: 100%;
 }
+
+/*Section Our Price*/
+.ourprice{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.ourprice .top{
+    background: black;
+    color: white;
+    padding: 25 0 35 0;
+}
+.ourprice .top h2{
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.ourprice .top #lead{
+    padding: 0;
+    margin: 0;
+}
+.ourprice .top #lead span{
+    font-size: 100px;
+    font-weight: bold;
+}
+.ourprice .top #lead sup{
+    vertical-align: 54px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.ourprice .top #lead sub{
+    font-size: 18px;
+    font-weight: bold;
+}
+.ourprice .top >span{
+    font-weight: bold;
+    color: #5f5c5c;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.ourprice .down{
+    background: #f7f7f7;
+    padding: 0 0 0 20px;
+}
+.ourprice .down .lead{
+    font-size: 17px;
+    font-weight: bold;
+    opacity: 1;
+}
+.ourprice .down p{
+    font-size: 17px;
+    font-weight: bold;
+    opacity: .6;
+}
+.ourprice .down p button{
+    padding: 2 14px;
+    margin-left: 25px; 
+}
+.ourprice .down .buyer{
+    color: #C62727;
+    font-size: 19px;
+    padding-bottom: 20px;
+    
+}
+.ourprice .popular{
+    background: #4CAF50;
+    padding: 11px 0 1px 0;
+    font-size: 16px;
+    opacity: .8;
+    color: white;
+    font-weight: bold;
+}
+.ourprice .container div:first-of-type,
+.ourprice .container div:nth-of-type(3)
+{
+    padding-top: 50px;
+}
+    
+    
+    
