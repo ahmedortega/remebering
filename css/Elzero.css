@@ -397,6 +397,53 @@ body {
 {
     padding-top: 50px;
 }
-    
-    
+
+/* Section OurTeam */
+.ourteam .leader img{
+    height: 320;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    opacity: .6;
+}
+.ourteam .leader .col-lg-3{
+    padding: 0;
+    border-bottom: 1px solid #edf0f2;
+    border-right: 1px solid #edf0f2;
+    min-height: 320;
+    margin-bottom: 30px;
+    display: block;
+    z-index: 1;
+    background: rgba(122,204,202,.8);
+}
+.ourteam .leader .col-lg-3:after{
+    content: "";
+    position: absolute;
+    background: white;
+    min-height: 320;
+    width: 100%;
+    left: 0;
+    opacity: .8;
+}
+.ourteam .leader h4{
+    position: absolute;
+    margin-top: 260px;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.ourteam .leader p{
+    position: absolute;
+    margin-top: 286px;
+    color: white;
+    padding-left: 10px;
+}
+
+
+
+
+
+
     
