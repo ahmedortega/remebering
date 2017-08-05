@@ -55,6 +55,7 @@ body {
 .lead {
     animation: flash 1s ease-in-out 1;
 }
+
 /*     navbar    */
 
 .navbar>.container-fluid .navbar-brand {
@@ -181,4 +182,26 @@ body {
     border: 2px solid #F4E1E1;
     width: 15px;
     height: 15px;
+}
+/* Section About */
+.about{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.about .container h1 span{
+    color: #C62727;
+    font-weight: bolder;
+    border-bottom: 2px solid #C62727;
+}
+.about .container p{
+    padding-top: 20px;
+}
+/* Section Features*/
+.features .container span{
+    font-size: 30px;
+}
+.features .container h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: #F98903;
 }
