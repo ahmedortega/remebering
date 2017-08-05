@@ -42,19 +42,21 @@ body {
         transform: translateX(10px);
     }
 }
-@keyframes flash {
-  0%,100%{
-    opacity: 1;
-  }
 
-  50%{
-    opacity: 0;
-  }
+@keyframes flash {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 .lead {
     animation: flash 1s ease-in-out 1;
 }
+
 
 /*     navbar    */
 
@@ -183,25 +185,61 @@ body {
     width: 15px;
     height: 15px;
 }
+
+
 /* Section About */
-.about{
+
+.about {
     margin-top: 40px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
-.about .container h1 span{
+
+.about .container h1 span {
     color: #C62727;
     font-weight: bolder;
     border-bottom: 2px solid #C62727;
 }
-.about .container p{
+
+.about .container p {
     padding-top: 20px;
 }
+
+
 /* Section Features*/
-.features .container span{
-    font-size: 30px;
+
+.features {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-image: url('../images/mirror-light-black-glass.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
 }
-.features .container h2{
+
+.features .container span {
+    font-size: 35px;
+    color: white;
+}
+
+.features .container h2,
+.features .container .lead strong {
     font-size: 25px;
     font-weight: bold;
     color: #F98903;
+}
+
+.features .container .lead {
+    color: white;
+}
+
+.features .container .transparent-class {
+    background: rgba(132, 141, 149, .1);
+    width: 100%;
+    min-height: 400px;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
 }
