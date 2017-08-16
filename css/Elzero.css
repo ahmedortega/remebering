@@ -2,7 +2,9 @@ body {
     padding-top: 60px;
     font-family: 'Cinzel', serif;
 }
-
+.container{
+    overflow: hidden;
+}
 
 /*     Animations    */
 
@@ -87,6 +89,35 @@ body {
     animation: flash 1s ease-in-out 1;
 }
 
+@keyframes flashBackground{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: .2
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: .4;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: .6;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: .8;
+    }
+    100%{
+        opacity: 1;
+    }   
+}
 
 /*     navbar    */
 
@@ -397,52 +428,95 @@ body {
 {
     padding-top: 50px;
 }
-
-/* Section OurTeam */
-.ourteam .leader img{
-    height: 320;
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    opacity: .6;
+/* section Our Team*/
+.ourteam .leadership .head{
+    border-top: 1px solid #000;
+    padding-bottom: 30px;
 }
-.ourteam .leader .col-lg-3{
+.ourteam .leadership ul{
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    border-bottom: 1px solid #edf0f2;
-    border-right: 1px solid #edf0f2;
-    min-height: 320;
-    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.ourteam .leadership ul li{
     display: block;
-    z-index: 1;
-    background: rgba(122,204,202,.8);
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 280px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
 }
-.ourteam .leader .col-lg-3:after{
-    content: "";
-    position: absolute;
-    background: white;
-    min-height: 320;
+.ourteam .leadership ul li img{
     width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: absolute;
+    float: left;
     left: 0;
-    opacity: .8;
 }
-.ourteam .leader h4{
+.ourteam .leadership ul li .info{
+    border: 25px solid transparent;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    visibility: hidden;
+}
+.ourteam .leadership ul li .info .title{
+    color: black;
     position: absolute;
-    margin-top: 260px;
-    color: white;
+    text-align: center;
+    padding-top: 35%;
+    background: rgba(255,255,255,.9);
+    width: 100%;
+    height: 100%;
+    border: 25px solid transparent;
+}
+.ourteam .leadership ul li .info:hover{
+    animation: flashBackground 1.5s linear 1;
+}
+.ourteam .leadership ul li .info .title h4{
+    font-size: 18px;
     font-weight: bold;
-    padding-left: 10px;
-}
-.ourteam .leader p{
-    position: absolute;
-    margin-top: 286px;
-    color: white;
-    padding-left: 10px;
+    letter-spacing: 1px;
 }
 
+.ourteam .leadership ul li:first-of-type{
+    top: 300px;
+}
+.ourteam .leadership ul li:nth-of-type(2){
+    left: -90px;
+}
+.ourteam .leadership ul li:nth-of-type(3){
+    top: 20px;
+    left: -45px;
+    z-index: 6;
+}
+.ourteam .leadership ul li:nth-of-type(4){
+    top: 70px;
+}
+.ourteam .leadership ul li:nth-of-type(5){
+    top: -60px;
+    left: 350px;
+}
+.ourteam .leadership ul li:nth-of-type(6){
+    float: right;
+    right: 200px;
+    top: -130px;
+    z-index: 5;
+}
+.ourteam .leadership ul li:hover{
+    z-index: 6;
+    transition: all .5s ease;
+    animation: shake 1.5s linear;
 
-
+}
+.ourteam .leadership ul li:hover .info{
+    visibility: visible;
+}
 
 
 
