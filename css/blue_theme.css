@@ -1,10 +1,10 @@
 .option_box .color_option{
-    border: 3px solid #C62727;
+    border: 3px solid #4508ff;
 }
 .option_box .color_option ul li,
 .option_box .icon_box,
 .carousel-indicators .active{
-    background-color: #C62727;
+    background-color: #4508ff;
 }
 .navbar>.container-fluid .navbar-brand,
 .navbar-inverse .navbar-nav>.active>a,
@@ -17,13 +17,13 @@
 .ourprice .down .buyer,
 .location .offices>h1,
 .location .offices .title h1{
-    color: #C62727;
+    color: #4508ff;
 }
 .about .container h1 span {
-    color: #C62727;
-    border-bottom: 2px solid #C62727;
+    color: #4508ff;
+    border-bottom: 2px solid #4508ff;
 }
 .testimonials .carousel-indicators .active{
-    border: 2px solid #C62727;
+    border: 2px solid #4508ff;
 }
 
