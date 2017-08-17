@@ -21,4 +21,9 @@ $(document).ready(function () {
     } else {
         $(".ourteam .leadership ul li").attr("id", "");
     }
+    
+    /*  Tool Box  */
+    $(".option_box .icon_box").click(function () {
+        $(".option_box .color_option").fadeToggle();
+    });
 });

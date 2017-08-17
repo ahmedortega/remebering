@@ -1,0 +1,7 @@
+.option_box .color_option{
+    border: 3px solid #C62727;
+}
+.option_box .color_option ul li,
+.option_box .icon_box{
+    background-color: #C62727;
+}

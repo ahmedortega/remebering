@@ -119,6 +119,41 @@ body {
     }   
 }
 
+
+/* Start Box Option */
+.option_box{
+    position: fixed;
+    left: 0;
+    z-index: 9999;
+}
+.option_box .color_option{
+    float: left;
+    width: 160px;
+    background: #333;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    cursor: default;
+    display: none;
+}
+.option_box .color_option ul li{
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.option_box .icon_box{
+    color: white;
+    padding: 3px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* End Box Option */
+
+
 /*     navbar    */
 
 .navbar>.container-fluid .navbar-brand {

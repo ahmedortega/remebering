@@ -1,0 +1,29 @@
+/* Mobile and Tablets Screen */
+@media (max-width: 768px)
+{
+    .navbar>.container-fluid .navbar-brand{
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+    .navbar>.container-fluid .navbar-brand span{
+        font-size: 20px;
+    }
+    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{
+        max-height: none;
+    }
+}
+
+/* Small Screen */
+@media (min-width:768px) and (max-width:991px)
+{
+    .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand{
+        font-size: 14px;
+    }
+    .ourteam .leadership ul li img:nth-of-type(6){
+        float: right;
+    }
+    .ourteam .leadership ul li:nth-of-type(6){
+        float: right;
+    }
+}
+
