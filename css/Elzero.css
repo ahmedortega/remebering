@@ -357,6 +357,7 @@ body {
 .ourprice{
     padding-top: 30px;
     padding-bottom: 40px;
+    perspective: 600px;
 }
 .ourprice .top{
     background: black;
@@ -405,6 +406,13 @@ body {
     font-weight: bold;
     opacity: .6;
 }
+.ourprice .top:hover p,
+.ourprice .top:hover h2{
+    transform: scale(1.3);
+    color: #4CAF50;
+    cursor: default;
+    transition: all 1s ease-in-out;
+}
 .ourprice .down p button{
     padding: 2 14px;
     margin-left: 25px; 
@@ -428,7 +436,12 @@ body {
 {
     padding-top: 50px;
 }
+
+
 /* section Our Team*/
+.ourteam{
+    margin-bottom: 30px;
+}
 .ourteam .leadership .head{
     border-top: 1px solid #000;
     padding-bottom: 30px;
@@ -450,6 +463,18 @@ body {
     overflow: hidden;
     position: relative;
 }
+
+.ourteam .leadership ul #remover{
+    top: auto;
+    left: auto;
+    width: 25%;
+}
+.ourteam .leadership ul #xs{
+    width: 50%;
+    top: auto;
+    left: auto;
+}
+
 .ourteam .leadership ul li img{
     width: 100%;
     height: 100%;
@@ -477,6 +502,7 @@ body {
 }
 .ourteam .leadership ul li .info:hover{
     animation: flashBackground 1.5s linear 1;
+    cursor: default;
 }
 .ourteam .leadership ul li .info .title h4{
     font-size: 18px;
@@ -503,10 +529,9 @@ body {
     left: 350px;
 }
 .ourteam .leadership ul li:nth-of-type(6){
-    float: right;
-    right: 200px;
-    top: -130px;
     z-index: 5;
+    left: 400px;
+    top: -90px;
 }
 .ourteam .leadership ul li:hover{
     z-index: 6;
@@ -519,5 +544,77 @@ body {
 }
 
 
+/* location */
 
+.location{
+    overflow: hidden;
+    background-image: url('../images/pexels-photo-531415.jpeg');
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    object-fit: fill;
+    object-position: center;
+}
+.location .offices>h1{
+    color: #C62727;
+    padding: 35px 0 20px 0;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+.location .offices{
+    z-index: 50;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    color: white;
+    min-height: 450px;
+    width: 100%;
+    margin: 0;
+}
+.location .offices .title .head span{
+    font-size: 150px;
+    color: #F98903;
+    font-weight: bold;
+    line-height: 100%;
+}
+.location .offices .title .head{
+    position: relative;
+}
+.location .offices .title .head hr{
+    border: 2px solid #F98903;
+    position: absolute;
+    width: 50%;
+    top: 102px;
+    left: 80px;
+}
+.location .offices .title h1{
+    padding-bottom: 5px;
+    color: #C62727;
     
+}
+.location .offices .title button{
+    width: 40%;
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    border: 1px solid #000;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.location .offices .title button:hover{
+    background: white;
+    color: #000;
+    transition: 1s all ease;
+}
+
+
+
+
+
+
+
